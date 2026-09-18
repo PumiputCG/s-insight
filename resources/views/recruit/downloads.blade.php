@@ -1,0 +1,25 @@
+@extends('layouts.portal')
+
+@section('title', 'ดาวน์โหลด')
+
+@section('topbar-title')
+  <span class="tt-kicker" data-i18n="recruit.kicker">การสรรหา</span>
+  <span class="tt-title" data-i18n="nav.rcDownloads">ดาวน์โหลด</span>
+@endsection
+
+@section('page-style')
+    .rc-stub { width: min(100%, 52rem); margin-top: clamp(1rem, 6vh, 4rem); display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; color: var(--muted-light); }
+    .rc-stub-icon { width: 3.4rem; height: 3.4rem; opacity: .55; fill: none; stroke: currentColor; stroke-width: 1.4; stroke-linecap: round; stroke-linejoin: round; }
+    .rc-stub h1 { font-family: var(--font-display); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 400; color: var(--light-text); }
+    .rc-stub p { max-width: 30rem; font-size: .9rem; line-height: 1.6; }
+    .rc-wip-badge { display: inline-flex; align-items: center; gap: .45rem; padding: .4rem .9rem; border: 1px solid var(--line-strong); border-radius: 999px; font-size: .72rem; letter-spacing: .06em; text-transform: uppercase; color: var(--moss); }
+@endsection
+
+@section('content')
+  <div class="rc-stub">
+    <svg class="rc-stub-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="M7 10l5 5 5-5"></path><path d="M12 15V3"></path></svg>
+    <h1 data-i18n="nav.rcDownloads">ดาวน์โหลด</h1>
+    <span class="rc-wip-badge" data-i18n="rc.wip">อยู่ระหว่างพัฒนา</span>
+    <p data-i18n="rc.stubNote">ส่วนนี้กำลังพัฒนา จะเปิดใช้งานเร็ว ๆ นี้</p>
+  </div>
+@endsection
